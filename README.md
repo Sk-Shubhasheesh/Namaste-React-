@@ -111,3 +111,6 @@ But always safe to put it caret, because some timewhen we have a major upgrade a
 
 ### What is dist folder ?
 * The dist(distribution) folder is where the bundled and optimized files for production are stored. It contain the final version of the application that can be deployed.
+
+
+## Episod 03 - Laying The Foundation
