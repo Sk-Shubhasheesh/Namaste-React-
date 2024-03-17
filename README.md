@@ -1,3 +1,53 @@
+# Namaste React🙏🙏🙏
+
+## Episod 01 - Inception
+### What is Emmet ?
+* It basically generate some code for us inside VsCode.
+### What is CND?
+* CDN is stand for Content Delivery Network.It is a geographically distributed group of servers that work together to deliver internet content, such as web pages, videos, images, and other resources, to users in a faster and more efficient manner.
+
+### What is CND React?
+* These are the website where React has been hosted, we are just pulling React from there and using in our project.
+
+### Why we use CDN as a software devloper ?
+* One of the primary reasons for using a CDN is to deliver content faster to users. CDNs have servers distributed across different geographical locations. When a user requests content from a website, the CDN serves that content from the server that is closest to the user's location. This reduces latency and load times, making the website or application faster and more responsive.
+* Since CDNs have multiple servers, if one server goes down or experiences issues, the CDN can automatically route traffic to another available server. This helps to improve the overall availability and reliability of the website or application.
+
+### What is crossorigin ?
+* CrossOrigin" (short for "Cross-Origin Resource Sharing") is a security feature implemented in web browsers to allow resources (like JavaScript, fonts, CSS, etc.) on a web page to be requested from another domain outside the domain from which the resource originated. This is important for web applications that need to fetch resources from different domains. It is a HTTP feature.
+
+### Why there are two files in CDN link of React ?
+* First file is the core of the react, this is the core react framework algorithm.
+* Second file is for React dom, this is the react library which is usefull for DOM Operation.
+
+### Why did React make different file for both of them ?
+* React doesn't only work on browser react also works for mobiles phone so there are different places where react is used so there are different function methods which are being used inside React native, browser or different places that is why there are two files.
+
+### What is React ?
+* DOM (Document Object Model) manipulation is one of the more expensive operations in a web browser 😑.
+* So all these Frameworks & Libraries are trying to optimize this. React is also comes with a philosophy that whenever you need to do anything on a webpage do it using JavaScript so that is why react give you these helper function to made this things in a work in a very performent way.
+
+### What is props ?
+* props is nothing but atrribute + children.🤣
+```.js
+const heading = React.createElement(
+"h1", 
+ {id: "heading", xyz: "abc"}, // Atrribute 
+ "Hello World From React!"); // Children
+```
+
+### What is React.createElement() ?
+*  It's a function used to create React elements, which are the building blocks of React applications.
+* But at the end of the day it is just a object😊
+
+### What is the job of root.render() ?
+* Its job is basically to take this object create the tag which the browser understand and put the inside the root element.
+
+### Why we call React as a library ?
+* React can be apply to a small portation of a web page itself, React can work only header, React can only work with footer, React can be work only sidebar also. 😊
+
+
+
 ## Episod 02 - Igniting Our App
 
 ### Can React making our App is fast ?
