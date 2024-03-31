@@ -114,3 +114,14 @@ But always safe to put it caret, because some timewhen we have a major upgrade a
 
 
 ## Episod 03 - Laying The Foundation
+### What is JSX ?
+* JSX(JavaScript XML) is a JavaScript syntax which is easier way to create React element. 
+* JSX is not a part of React because react is different and jsx is different. We can write React without JSX.
+* JSX is not HTML inside JavaScript. JSX is different from HTML but its syntax is like HTML.
+```.js
+const jsxHeading = <h1 id="heading">Namaste React using JSX 🚀</h1> 
+```
+* The above code is not pure JavaScript code our js engine is not understand these JSX because js engine only understand ecmascript.
+* Before reache the code js engine, it is transpiled by Parcel and in parcel there are lot of packages so one package which is known as Babel doing this job to convert Jsx code to React code which our browser will be understand.
+* If you have to give attribute to JSX, you have to use camelCase.
+* If you write single line Jsx code it is good if you want to multiline JSX the wrapped it inside parenthesis beacuse babel is need to understand where JSX is started.
