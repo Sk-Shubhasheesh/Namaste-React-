@@ -125,3 +125,24 @@ const jsxHeading = <h1 id="heading">Namaste React using JSX 🚀</h1>
 * Before reache the code js engine, it is transpiled by Parcel and in parcel there are lot of packages so one package which is known as Babel doing this job to convert Jsx code to React code which our browser will be understand.
 * If you have to give attribute to JSX, you have to use camelCase.
 * If you write single line Jsx code it is good if you want to multiline JSX the wrapped it inside parenthesis beacuse babel is need to understand where JSX is started.
+
+### What is a React Component ?
+* Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+* There are two types of component in react:
+   1. Class Based Component - OLD way to writing code. It use JS classes for creating component.
+   2. Functional Component - NEW way to writing code. It use JS functions for creating component. It is a just normal JavaScript function which return some JSX code/element. We can also say a functon which return react element is called Functional Component.
+   ```.js
+   const HeadingComponent = ()=>{
+    return <h1>Namste React Functional Component</h1>}
+    ```
+   sometime pepole does not use return so that is also correct and valid syntex
+   ```.js
+   const HeadingComponent = () => (
+      <div id="container">
+         <h1 className="heading">Namste React Functional Component</h1>
+      </div> );
+   ```
+* Everything inside react is component.
+
+### What is Component composition ?
+* Putting component inside the component is called component composition.
