@@ -146,3 +146,17 @@ const jsxHeading = <h1 id="heading">Namaste React using JSX 🚀</h1>
 
 ### What is Component composition ?
 * Putting component inside the component is called component composition.
+```.js
+const Title = ()=>(
+    <h1 className="head" tabIndex="5">
+        Namaste React using Title
+    </h1>
+);
+const HeadingComponent = () => (
+  <div id="container">
+    <Title/>
+    <h1 className="heading">Namste React Functional Component</h1>
+  </div>
+);
+```
+
