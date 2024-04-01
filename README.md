@@ -160,3 +160,7 @@ const HeadingComponent = () => (
 );
 ```
 
+
+## Episod 04 - Talk is Cheap, Show me the code
+
+
