@@ -163,4 +163,14 @@ const HeadingComponent = () => (
 
 ## Episod 04 - Talk is Cheap, Show me the code
 
+### How to make our app card dynamic ?
+* For making our app card dynamic we use props.
 
+### What is props ?
+* Props is the short form for properties. Properties is something which we pass to the component. Suppose i pass dynamically data to component, we can pass it as props.
+* At the end of the day props is just a normal argument to a function.
+* Passing a props to a component just like as passing argument to a function.
+
+### What is config-driven UI ?
+* In a configuration-driven UI, the layout, styles, and other properties of UI elements are defined in a configuration file or database, which can be easily modified without requiring changes to the codebase. This approach makes it easier to customize the UI for different use cases or user groups, without the need for extensive coding.
+* The configuration file or database may also define the data sources and the data to be displayed in the UI, as well as the interactions and behavior of the UI components. This allows for greater flexibility and adaptability of the UI to different use cases, as the configuration data can be easily modified or replaced without affecting the underlying application logic
