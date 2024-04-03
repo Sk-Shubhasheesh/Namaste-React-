@@ -177,3 +177,12 @@ const HeadingComponent = () => (
 
 
 ## Episod 05 - Let's Get Hooked
+
+### How many way we use import/exports in js ?
+* In JS there is two way of Export/Import:-
+   1. Default Export/Import
+         export default Component;
+         import Component from "path";
+   2. Named Export/Import
+         export const Component;
+         import {Component} from "path";
