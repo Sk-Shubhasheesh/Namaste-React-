@@ -186,3 +186,27 @@ const HeadingComponent = () => (
    2. Named Export/Import
          export const Component;
          import {Component} from "path";
+
+### What is React Hook ?
+* Hooks is a nothing but a normal javascript utility function which is give to us by react out of the box😊. It is a pre-build.
+* They are a normal Js function written by Facebook Devlopers that give us some superpowers in our react code.
+* There are two very important Hooks in react -
+    1. useState() - * It basically use to generate Superpowerful State Variable in react. When we called, it    returns an array of two things: [state, setState].
+    Here is two things because there need to be a trigger to start the diff algorithm and update the UI thats why we need the second function. Whenever we call the second function( setState) it will be automatically re render the component.
+    * 'state' being the state variable and 'setState()' being the state-updating function.
+
+    * Whenever a statevariable update, react re-render the components.
+    2. useEffect(): useEffect hook handles the effects of the dependency array. The useEffect Hook allows us to perform side effects on the components. fetching data, directly updating the DOM and timers are some side effects. It is called every time any state if the dependency array is modified or updated.
+
+
+### What is Virtal DOM ?
+* A logical representation of actual DOM in the form of React Elements.
+* A programming concept where a virtual representation of the UI is kept in the memory.It is an object that has React Elements to represent the UI.
+
+### What is the diff Algorithm ?
+* Whenever the state or props get updated, an updated VDOM tree is generated.
+* Diff algorithm calculate the difference between 2VDOMs(the previous VDOM and the updated VDOM)
+* After calculating this diff only the actual DOM updated. This makes React capable of doing fast DOM manipulations.
+
+### What is Reconciliation(React Fiber) ?
+* The process of computing the diff between the 2 VDOMs is called Reconciliation
