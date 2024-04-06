@@ -210,3 +210,6 @@ const HeadingComponent = () => (
 
 ### What is Reconciliation(React Fiber) ?
 * The process of computing the diff between the 2 VDOMs is called Reconciliation
+
+
+## Episod 06 - Exploring The World
