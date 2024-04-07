@@ -196,9 +196,7 @@ const HeadingComponent = () => (
     * 'state' being the state variable and 'setState()' being the state-updating function.
 
     * Whenever a statevariable update, react re-render the components.
-    2. useEffect(): useEffect hook handles the effects of the dependency array. The useEffect Hook allows us to perform side effects on the components. fetching data, directly updating the DOM and timers are some side effects. It is called every time any state if the dependency array is modified or updated.
-
-
+    2. useEffect()
 ### What is Virtal DOM ?
 * A logical representation of actual DOM in the form of React Elements.
 * A programming concept where a virtual representation of the UI is kept in the memory.It is an object that has React Elements to represent the UI.
@@ -213,3 +211,28 @@ const HeadingComponent = () => (
 
 
 ## Episod 06 - Exploring The World
+
+### What is Monolithic Architecture ?
+* Monolith is also an architecture. Monolith architecture is all about how you set up the project. For example : think about the BookMyShow application there are multiple different big big components. There should be some payment module that handles all payment, bookings, authentication , reminders etc . If we make one project that is BMS(BookMyShow) and then write all the payment logic, booking logic, authentication logic etc in the same folder then this kind of structure is called a monolith.
+
+### What is MicroService Architecture ?
+* Microservices architecture is a software development approach where an application is composed of small, independent services that work together to fulfill a specific business function. Each service in a microservices architecture is responsible for a specific task or functionality and can be developed, deployed, and scaled independently of other services.
+
+### How webApps or UI Application fetch the data from backend ?
+* There are two ways that can be follow : -
+  1. As soon as our page load we can make a api call and when we get the data then we can render it on to UI.
+  2. * As soon as our page loads we will just render our UI, after the we make a api call and as soon as we get the result back from api, now we will re-render our apllication with the new data. In react we will always use this approach because this is the better approach.
+  * In this approach we rendering twice but it doesn't matter.Because the render cycle of reeact is very fast, react has the one of the best render machanisam. React render our UI is very fats.
+
+### What is useEffect() ?
+* useEffect() hook is another utility fuction provided by react out of the box. It has take two argument one is callback function and another is dependancy Array. The callback function is called after your component is render.
+```.js
+useEffect(()=>{
+    console.log("useEffect Called");
+  }, []);
+```
+* When we want some similar UI to be render first quickly, then make an API call, and then re-render the component with the actual data.
+
+### what is CORS Policy ?
+* Browsers do not allow us to call an API present on the other origins from our origin.
+* This is a web standard that makes resource sharing safe across different origin.
