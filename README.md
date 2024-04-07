@@ -236,3 +236,8 @@ useEffect(()=>{
 ### what is CORS Policy ?
 * Browsers do not allow us to call an API present on the other origins from our origin.
 * This is a web standard that makes resource sharing safe across different origin.
+
+
+### What is optional Chaining ?
+*  It is a JS concept wherein we use the '?.' operator while reading some property from an object or calling a function.
+* If the object accessed/ function called evaluates to null/undefined, the expression short-circuits and evaluates to undefined rather than throwing an error. So use it when there is a possibility that a reference might be missing.

@@ -1,11 +1,10 @@
 import RestaurantCard from "./RestaurantCard";
-import resList from "../utils/mockData.js";
 import { useState, useEffect } from "react";
 
 // not using keys (not acceptable) <<<< index as key <<<< unique id
 const Body = () => {
   // State Variable - Super powerful variable
-  const [ListOfRestaurants, setListOfRestaurant] = useState(resList);
+  const [ListOfRestaurants, setListOfRestaurant] = useState([]);
 
   useEffect(() => {
     fetchData();
@@ -17,7 +16,8 @@ const Body = () => {
     );
     const json = await data.json();
     console.log(json);
-    setListOfRestaurant(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants || [])
+    // Optional Chaining
+    setListOfRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [])
   }
 
   return (
