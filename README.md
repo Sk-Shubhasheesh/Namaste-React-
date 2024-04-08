@@ -244,3 +244,10 @@ useEffect(()=>{
 
 ### What is Shimmer UI ?
 * Shimmer is a temporary animation placeholder for when data from the service call takes time to get back and we don't want to block rendering the rest of the UI.
+
+### What is Conditional rendering ?
+* Conditional rendering in React refers to the process of delivering elements and components based on certain conditions.
+```.js
+if(ListOfRestaurants.length === 0){
+   return <Shimmer />
+```
