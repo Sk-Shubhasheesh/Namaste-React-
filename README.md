@@ -241,3 +241,6 @@ useEffect(()=>{
 ### What is optional Chaining ?
 *  It is a JS concept wherein we use the '?.' operator while reading some property from an object or calling a function.
 * If the object accessed/ function called evaluates to null/undefined, the expression short-circuits and evaluates to undefined rather than throwing an error. So use it when there is a possibility that a reference might be missing.
+
+### What is Shimmer UI ?
+* Shimmer is a temporary animation placeholder for when data from the service call takes time to get back and we don't want to block rendering the rest of the UI.
