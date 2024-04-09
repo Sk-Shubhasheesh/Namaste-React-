@@ -259,3 +259,5 @@ if(ListOfRestaurants.length === 0){
 * It's is called after every render of the component. Inside the useEffect we put thr dependecy array which change the behaviour of it. But dependency array is not mendatory. if we do not put it useEffect is called on every render.
 * If the dependency array is the empty then useEffect is called only its inital render(just once). 
 * If we put somthing inside in dependancy array then it will only be call when the dependancy changes. for ex: if dependancy array is [btnNameReact] then it called everytime when btnNameReact is updated.
+
+Note : - Never create a state variable using useState outside of the component. and never put hook inside the if and else condition, loop & function.
