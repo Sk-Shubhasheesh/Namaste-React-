@@ -251,3 +251,6 @@ useEffect(()=>{
 if(ListOfRestaurants.length === 0){
    return <Shimmer />
 ```
+
+
+## Episod 07 - Finding The Path
