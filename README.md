@@ -267,4 +267,20 @@ Note : - Never create a state variable using useState outside of the component. 
 * React Router is a JavaScript framework that lets us handle client and server-side routing in React applications. It enables the creation of single-page web or mobile apps that allow navigating without refreshing the page. It also allows us to use browser history features while preserving the right application view.
 
 ### What is React Router DOM ?
-*React Router DOM is an npm package that enables you to implement dynamic routing in a web app. It allows you to display pages and allow users to navigate them. It is a fully-featured client and server-side routing library for React. React Router Dom is used to build single-page applications i.e. applications that have many pages or components but the page is never refreshed instead the content is dynamically fetched based on the URL. This process is called Routing and it is made possible with the help of React Router Dom.
+* React Router DOM is an npm package that enables you to implement dynamic routing in a web app. It allows you to display pages and allow users to navigate them. It is a fully-featured client and server-side routing library for React. React Router Dom is used to build single-page applications i.e. applications that have many pages or components but the page is never refreshed instead the content is dynamically fetched based on the URL. This process is called Routing and it is made possible with the help of React Router Dom.
+
+### What is the use case of <Link/> component?
+* <Link></Link> component is a superpower given to us by 'react-router-dom'. Use it when you want to make links in your app such that on clicking them, the entire webpage does not reload.
+*It just refreshes the components that are required to be loaded into the DOM. So it helps in performing Client-Side Rendering.
+
+### What is SPA ?
+* SPA stands for Single Page Application.
+* A Single Page Application (SPA) is a web application that loads a single HTML page and dynamically updates the content as the user interacts with the application.
+* An application that has a single HTML page being rendered to the DOM.All the new pages that we see are just "Components interchanging themselves".
+
+### How many types of routing in Web Apps ?
+* There are two types of routing in webApps :
+    1. Client Side Routing - When we click an anchor tag, it reloads the entire app, sends a network call to that page fetches the HTML, and renders it on the webpage.
+    2. Server Side Routing - When we click some link/anchor tag, no network call is made because all the components are already loaded into the browser. So, we just render the required component in that place where needed in the DOM. The entire webpage is not reloaded.
+
+
