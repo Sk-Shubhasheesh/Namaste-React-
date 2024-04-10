@@ -261,3 +261,10 @@ if(ListOfRestaurants.length === 0){
 * If we put somthing inside in dependancy array then it will only be call when the dependancy changes. for ex: if dependancy array is [btnNameReact] then it called everytime when btnNameReact is updated.
 
 Note : - Never create a state variable using useState outside of the component. and never put hook inside the if and else condition, loop & function.
+
+
+### What is React Router ?
+* React Router is a JavaScript framework that lets us handle client and server-side routing in React applications. It enables the creation of single-page web or mobile apps that allow navigating without refreshing the page. It also allows us to use browser history features while preserving the right application view.
+
+### What is React Router DOM ?
+*React Router DOM is an npm package that enables you to implement dynamic routing in a web app. It allows you to display pages and allow users to navigate them. It is a fully-featured client and server-side routing library for React. React Router Dom is used to build single-page applications i.e. applications that have many pages or components but the page is never refreshed instead the content is dynamically fetched based on the URL. This process is called Routing and it is made possible with the help of React Router Dom.
