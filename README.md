@@ -283,4 +283,7 @@ Note : - Never create a state variable using useState outside of the component. 
     1. Client Side Routing - When we click an anchor tag, it reloads the entire app, sends a network call to that page fetches the HTML, and renders it on the webpage.
     2. Server Side Routing - When we click some link/anchor tag, no network call is made because all the components are already loaded into the browser. So, we just render the required component in that place where needed in the DOM. The entire webpage is not reloaded.
 
-
+### What is dynamic routing ?
+*  It means creating routes that have dynamic paths rather than hardcoded paths.
+* React Router is a popular library used for implementing dynamic routing in React applications.
+* Dynamic routing in ReactJS involves using the React Router library to define routes within a single-page application, mapping URLs to specific React components for rendering based on navigation.

@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
+import RestaurantMenu from "./components/RestaurantMenu";
 
 const AppLayout = () => {
   return (
@@ -17,30 +18,33 @@ const AppLayout = () => {
 };
 
 
-const appRouter = createBrowserRouter([
+
+ // createBrowserRouter takes in Array of objects
+ const appRouter = createBrowserRouter([
   {
-    path: "/",
-    element:<AppLayout />,
-    children: [
-      {
-        path: "/",
-        element:<Body />
-      },
-      {
-        path: "/about",
-        element:<About />,
-      },
-      {
-        path: "/contact",
-        element:<Contact />,
-      },
-    ],
-    errorElement: <Error />,
-  },
+   path: '/',
+   element: <AppLayout/>,
+   children: [
+    {
+    path: '/',
+    element: <Body/>
+    },
+    {
+     path: '/about',
+     element: <About/>
+    }, 
+    {
+     path: '/contact',
+     element: <Contact/>
+    },
+    {
+     path: '/restaurant/:resId',
+     element: <RestaurantMenu/>
+    }
+   ],
+   errorElement: <Error/> //If you have error -> Show Error page  eg: http://localhost:1234/random-url
+  }
+ ])
  
-]);
-
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-// This RouterProvider provide this routing configration to our App
-root.render(<RouterProvider router={appRouter} />);
+ const root  = ReactDOM.createRoot(document.getElementById("root"));
+ root.render(<RouterProvider router={appRouter}/>);
