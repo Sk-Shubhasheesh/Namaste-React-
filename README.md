@@ -367,3 +367,15 @@ class UserClass extends React.Component {
   }
 }
 ```
+
+### What is the order of lifecycle method calls in Class-Based Components?
+* During the execution of a class-based component, we have 5 Lifecycle methods executed in the following order:
+ 1. constructor() -> 
+       * Whenever a new instance of the class    component is created, the constructor is called. 
+       * The best place to define a state for the class component since it is the first to be called upon the loading of the class component.
+ 2. render() -> 
+       * It does not mount the component to the DOM. It just generates the component's Virtual DOM representation based on the current props and state.
+ 3. componentDidMount() -> 
+       *  It executes after the component has been completely mounted to the DOM.
+       * It is the best place to make API calls/fetch calls.
+ 
