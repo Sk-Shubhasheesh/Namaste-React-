@@ -287,3 +287,6 @@ Note : - Never create a state variable using useState outside of the component. 
 *  It means creating routes that have dynamic paths rather than hardcoded paths.
 * React Router is a popular library used for implementing dynamic routing in React applications.
 * Dynamic routing in ReactJS involves using the React Router library to define routes within a single-page application, mapping URLs to specific React components for rendering based on navigation.
+
+## Episod 08 - Let's get Classy
+
