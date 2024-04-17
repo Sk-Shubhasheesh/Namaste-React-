@@ -325,3 +325,45 @@ class UserClass extends React.Component {
 * We know in our class components, the 1st method to be called is constructor( ) and in it, super(props) should be the very first line.
 * super( ) is a call to the Parent class's constructor i.e. to the React.Component's constructor.
 * We know in React class components, we will be using {this.props}. The 'this' object is actually coming from the parent class 'React.Component'. To use it, we must first initialize it. We can't use {this.props} unless the 'this.props' has been initialized in the parent class. So super(props) actually initializes the 'this.props'.
+
+### How to way create state variable inside function & class based component ?
+* Inside function component
+```.js
+import { useState } from "react";
+
+const User = (props) => {
+    const[count] = useState(0)
+    const [count2] = useState(1)
+    return(
+    <div className="user-card">
+      <h1>Count = {count}</h1>
+      <h1>Count2 = {count2}</h1>
+       <h2>Name:{props.name}</h2> 
+    </div>
+    )
+}
+```
+* Inside class based
+```.js
+import React from "react";
+class UserClass extends React.Component {
+    constructor(props){
+       super(props);
+       this.state = {
+        count: 0,
+        count2: 2
+       } 
+    }
+  render() {
+    // desturcuting
+    const {count2} = this.state
+    return (
+      <div className="user-card">
+        <h1>Count: {this.state.count}</h1>
+        <h1>Count2: {count2}</h1>
+        <h2>Name: {this.props.name}</h2>
+      </div>
+    );
+  }
+}
+```
