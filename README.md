@@ -378,3 +378,8 @@ class UserClass extends React.Component {
  3. componentDidMount() -> 
        *  It executes after the component has been completely mounted to the DOM.
        * It is the best place to make API calls/fetch calls.
+ 4. componentDidUpdate() -> 
+       * The componentDidUpdate() method allows us to execute the React code when the component is updated. All the network requests that are to be made when the props passed to the component changes are coded here.
+ 5. compononentWillUnmount()
+      * It is useful for doing any CLEAN-UP like clearing the interval, or timeout that we might have set earlier while mounting that component.
+      * This is very important for building SCALABLE and PERFORMANT APPS.
