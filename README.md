@@ -289,4 +289,39 @@ Note : - Never create a state variable using useState outside of the component. 
 * Dynamic routing in ReactJS involves using the React Router library to define routes within a single-page application, mapping URLs to specific React components for rendering based on navigation.
 
 ## Episod 08 - Let's get Classy
+### What is class based component ?
+* Class components are basically JavaScript Object Oriented classes with functions.
+* Inside it , there is a render method which return some peace of JSX
 
+** Props with Function component
+```.js
+const User = (props) => {
+    return(
+    <div className="user-card">
+       <h2>Name:{props.name}</h2> 
+    </div>
+    )
+}
+```
+** Props with Class Based component
+```.js
+import React from "react";
+class UserClass extends React.Component {
+    constructor(props){
+       super(props) 
+    }
+  render() {
+    return (
+      <div className="user-card">
+        <h2>Name: {this.props.name}</h2>
+      </div>
+    );
+  }
+}
+```
+
+### Why do we use super(props) in constructor inside class based component?
+*  Every Class component is a child of the 'React.Component' parent class.
+* We know in our class components, the 1st method to be called is constructor( ) and in it, super(props) should be the very first line.
+* super( ) is a call to the Parent class's constructor i.e. to the React.Component's constructor.
+* We know in React class components, we will be using {this.props}. The 'this' object is actually coming from the parent class 'React.Component'. To use it, we must first initialize it. We can't use {this.props} unless the 'this.props' has been initialized in the parent class. So super(props) actually initializes the 'this.props'.
