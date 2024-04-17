@@ -378,4 +378,3 @@ class UserClass extends React.Component {
  3. componentDidMount() -> 
        *  It executes after the component has been completely mounted to the DOM.
        * It is the best place to make API calls/fetch calls.
- 
