@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import {Link} from "react-router-dom";
 import {SWIGGY_URL} from "../utils/constants"
+import useOnlineStatus from "../utils/useOnlineStatus";
 const Body =()=>{
   const [listOfRes, setListOfRes] = useState([]);
   const [searchText, setSearchText] = useState("");
@@ -23,6 +24,13 @@ const Body =()=>{
     const json = await data.json();
     setListOfRes(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants); // ! Optional Chaining is important
     setFilteredRes(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+  };
+
+  const onlineStatus = useOnlineStatus();
+  if(onlineStatus === false){
+    return (
+      <h1>Looks like you are offline!! Plese check your internet connection</h1>
+    );
   }
 
   return listOfRes.length === 0 ? <Shimmer/> : ( // * Conditional Rendering -> Load A Shimmer UI - Good Practise ✅
