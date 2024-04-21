@@ -386,3 +386,19 @@ class UserClass extends React.Component {
 
 
 ## Episod 09 - Optimizing Our App
+
+### What is Single Responsibility Principle ?
+* Single Responsibility Principle(SRP) is a Computer Programming Principle where each entity(class/function) should have just one single responsibility.
+* Eg: <RestaurantCard/> component should just be concerned about rendering the Restaurant card. It should not be concerned about fetching those restaurant details from an API.
+
+### What is the Modularity of Code ?
+* Modularity means breaking our code into different small modules that are related to each other.
+* Breaking the code into smaller pieces makes it more Reusable, Maintainable, and Testable.
+* We can easily reuse the modules anytime, anywhere instead of writing the same code again and again.
+* If we encounter any bug in a particular functionality of our Modular code, we have a localized bug i.e. we can easily figure out that the bug arises from which module.
+
+### What is Custom Hooks ?
+*We know that hooks like useState, and useEffect are reusable components. Sometimes we make components that we have to reuse again and again in the application. In this case, we can convert the component to hooks by extracting logic from it.
+* Just as we have React Hooks as utility functions provided by React developers, similarly, we can write our own Custom Hooks to be used as utilities in our code.The main reason why you should be using Custom hooks is to maintain the concept of DRY(Don’t Repeat Yourself) in your React apps.
+* Whenever we find a single component dealing with more than 1 responsibility, we must think of abstracting some "utility functionality" outside it.
+* Writing Custom Hooks helps us abstract out the extra responsibility from the component. And they can now be re-used anywhere in our app, any number of times.
