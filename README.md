@@ -402,3 +402,7 @@ class UserClass extends React.Component {
 * Just as we have React Hooks as utility functions provided by React developers, similarly, we can write our own Custom Hooks to be used as utilities in our code.The main reason why you should be using Custom hooks is to maintain the concept of DRY(Don’t Repeat Yourself) in your React apps.
 * Whenever we find a single component dealing with more than 1 responsibility, we must think of abstracting some "utility functionality" outside it.
 * Writing Custom Hooks helps us abstract out the extra responsibility from the component. And they can now be re-used anywhere in our app, any number of times.
+
+### What is meant by 'Linting'?
+* Linting is a process of running your code through a tool to analyze for potential errors. It throws an error if you don't follow the conventions set by the linter.
+* We can plugin linters into our project to make sure the conventions and best practices are being followed.
