@@ -383,3 +383,6 @@ class UserClass extends React.Component {
  5. compononentWillUnmount()
       * It is useful for doing any CLEAN-UP like clearing the interval, or timeout that we might have set earlier while mounting that component.
       * This is very important for building SCALABLE and PERFORMANT APPS.
+
+
+## Episod 09 - Optimizing Our App
