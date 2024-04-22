@@ -406,3 +406,17 @@ class UserClass extends React.Component {
 ### What is meant by 'Linting'?
 * Linting is a process of running your code through a tool to analyze for potential errors. It throws an error if you don't follow the conventions set by the linter.
 * We can plugin linters into our project to make sure the conventions and best practices are being followed.
+
+### What is Chunking or Code Spliting or Dynamic Bundling ?
+
+* To brackdown to our app in small logical chunks.
+
+### What is lazy loading() or on demand loading or daynamic import ?
+* Use the lazy() method when you wish to not load everything into the browser in the beginning, instead, load the components only on-demand.
+
+* It allows the developer to break down an application into chunks (modules) per route and loads only the module(s) required for the route being visited.
+
+* Key principle being: "Load only what you need when you need it."
+
+### What is React suspense ?
+* React suspense is a built-in React component which lets you temporarily render a fallback UI while its children are still loading. Content delivery and site performance are important factors for web applications. You must deliver content quickly and effectively for better user experience.
