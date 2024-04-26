@@ -454,3 +454,15 @@ class UserClass extends React.Component {
 ♦️ Builds absolutely responsive UIs without writing media queries.
 
 ♦️ Preventing Redundancy: If we want two exactly the same UI objects in our app, we can use the same classes for both of them. Behind the scenes, the CSS code for that class will be imported just once by Tailwind. So we won't have redundant classes as we had in Vanilla CSS.
+
+### Cons of Tailwind CSS?
+♦️ When we add a lot of CSS classes to our HTML/JS code, it becomes less readable, lengthy, and clumsy.
+♦️ It comes with a lot of initial learning curve, as we need to know which class is to be used for which property.
+
+### In tailwind.config.js, what do all the keys "content", "theme", and "plugins" mean ?
+
+♦️ "content": We configure the paths to HTML and JS components that contain tailwind classes.
+
+♦️ "theme": The section where you define your project’s color palette, type scale, fonts, breakpoints, etc.
+
+♦️ "plugins": Here, we register new styles by injecting them into the user’s stylesheet using JavaScript instead of CSS.
