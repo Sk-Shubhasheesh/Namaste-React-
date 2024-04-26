@@ -422,3 +422,35 @@ class UserClass extends React.Component {
 * React suspense is a built-in React component which lets you temporarily render a fallback UI while its children are still loading. Content delivery and site performance are important factors for web applications. You must deliver content quickly and effectively for better user experience.
 
 ## Episod 10 - Jo Dikhta ha vo Bikta ha
+
+### What are the ways to apply styling to our web app?
+♦️ Vanilla CSS:
+✨️ We can use plain CSS to give styles to our app.
+✨️ We create an index.css file and add all the CSS rules there.
+
+♦️ SASS / SCSS :
+✨️ SASS stands for Syntactically Awesome StyleSheets.
+✨️ A stylesheet language that is compiled into CSS.
+✨️ Allows us to make use of Nested rules, variables, and functions.
+✨️ SCSS: The SCSS syntax uses curly braces and semi-colon syntax.
+✨️ SASS: Uses indentation instead of curly braces, and line-end instead of semicolon.
+
+♦️ Styled Components:
+✨️ Allows us to write styles just as we write React components.
+✨️ This means that when you're defining your styles, you're actually creating a normal React component, that has your styles attached to it.
+
+♦️ Using External CSS Libraries like Material UI, Tailwind CSS, BootStrap, Ant Design, Chakra UI, etc.
+✨️ They give pre-styled components.
+✨️ They export such components that are already beautiful. We can simply import and use them.
+✨️ Tailwind CSS is the most modern method being used extensively in the industry to style web apps.
+
+### Pros of Tailwind CSS ?
+♦️ We have all our styles in the JS files. No need to move to and fro between JS and CSS files thus making the development quite quick.
+
+♦️ Very lightweight library: Only the classes that we use are included in the CSS bundle of our build. Unused CSS is never shipped.
+
+♦️ Builds any complex UI with Tailwind.
+
+♦️ Builds absolutely responsive UIs without writing media queries.
+
+♦️ Preventing Redundancy: If we want two exactly the same UI objects in our app, we can use the same classes for both of them. Behind the scenes, the CSS code for that class will be imported just once by Tailwind. So we won't have redundant classes as we had in Vanilla CSS.
