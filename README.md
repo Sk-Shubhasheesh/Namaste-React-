@@ -420,3 +420,5 @@ class UserClass extends React.Component {
 
 ### What is React suspense ?
 * React suspense is a built-in React component which lets you temporarily render a fallback UI while its children are still loading. Content delivery and site performance are important factors for web applications. You must deliver content quickly and effectively for better user experience.
+
+## Episod 10 - Jo Dikhta ha vo Bikta ha
