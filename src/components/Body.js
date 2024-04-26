@@ -33,16 +33,16 @@ const Body =()=>{
     );
   }
 
-  return listOfRes.length === 0 ? <Shimmer/> : ( // * Conditional Rendering -> Load A Shimmer UI - Good Practise ✅
-    <div className="res-near">
-      <h1>Restaurants near you</h1>
-      <div className="search-container">
-        <input type="text" value={searchText} placeholder="Search for any cuisine or restaurant name" onChange={
+  return listOfRes.length === 0 ? (<Shimmer/>) : ( // * Conditional Rendering -> Load A Shimmer UI - Good Practise ✅
+    <div className="body">
+      <div className="res-near">
+      <div className="search-container m-2 p-4">
+        <input type="text" className="border border-solid border-black" value={searchText} onChange={
           (e)=>{
             setSearchText(e.target.value);
           }
         }/>
-        <button onClick={
+        <button className="px-4 py-2 bg-green-500 m-4 rounded-3xl" children onClick={
           ()=>{
             const searchedRes = listOfRes.filter((res) => {
                 return res?.info?.name?.toLowerCase()?.includes(searchText?.toLowerCase()) || 
@@ -56,10 +56,9 @@ const Body =()=>{
           }
         }>Search</button>
       </div>
-
-      <div className="filter">
+      <div className="filter m-4">
         <button
-          className="filter-btn"
+          className="filter-btn  p-4 bg-green-500 rounded-2xl"
           onClick={() => {
             const filteredRes = listOfRes.filter(
               (res) => res.info.avgRating > 4
@@ -68,10 +67,10 @@ const Body =()=>{
               setFilteredRes(filteredRes);
           }}
         >
-          Filter Restaurants
+          Top Rated Restaurants
         </button>
       </div>
-      <div className="res-container">
+      <div className="flex flex-wrap">
         {filteredRes.map((restaurants) => (
           // For each restaurants => return a (JSX) i.e <RestaurantCard /> (and pass data to it)
           <Link key={restaurants.info.id} to={`restaurant/${restaurants.info.id}`} style={{textDecoration: 'none', color: "#000"}}>
@@ -79,6 +78,7 @@ const Body =()=>{
           </Link>
         ))}
       </div>
+    </div>
     </div>
   );
  }
