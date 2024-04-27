@@ -466,3 +466,7 @@ class UserClass extends React.Component {
 ♦️ "theme": The section where you define your project’s color palette, type scale, fonts, breakpoints, etc.
 
 ♦️ "plugins": Here, we register new styles by injecting them into the user’s stylesheet using JavaScript instead of CSS.
+
+
+## Episod 11 - Data is the new Oil
+
