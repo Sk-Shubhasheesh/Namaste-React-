@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard from "./RestaurantCard"
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import {Link} from "react-router-dom";
@@ -8,9 +8,7 @@ const Body =()=>{
   const [listOfRes, setListOfRes] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [filteredRes, setFilteredRes] = useState([]);
-
   useEffect(()=>{
-    console.log("Use Effect Callback function Called!");
     fetchData();
   }, [])
 

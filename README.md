@@ -469,4 +469,12 @@ class UserClass extends React.Component {
 
 
 ## Episod 11 - Data is the new Oil
+### What is a Higher-Order Component ?
+♦️ A function that takes an existing component as an argument and then enhances that component(adds some extra features to it), and returns this enhanced component.
+♦️ They are Pure Functions. They never modify the component, but just add extra features on top of it.
 
+### What makes the Data Layer of our app?
+
+♦️ In a very generic way to see our React app, we can say it is composed of 2 Main Layers: Data Layer and UI Layer.
+♦️ The Data Layer consists of state, props, local variables, and whatever data our app deals with.
+♦️ It powers the UI layer of our app.
