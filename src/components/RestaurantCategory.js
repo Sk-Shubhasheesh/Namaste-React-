@@ -1,10 +1,8 @@
 import IteamList from "./ItemList";
 import { useState } from "react";
-const RestaurantCategory = ({data}) =>{
-  const [showIteams, setShowIteams] = useState(false)
-
+const RestaurantCategory = ({data, showItems, setShowIndex}) =>{
   const handleClick = ()=>{
-    setShowIteams(!showIteams);
+    setShowIndex()
 
   }
 
@@ -17,7 +15,7 @@ const RestaurantCategory = ({data}) =>{
         <span>⬇️</span>
         </div>
          {/* Accordion Body */}
-      {showIteams &&<IteamList items={data.itemCards}/>}
+      {showItems &&<IteamList items={data.itemCards}/>}
 
       </div>
 

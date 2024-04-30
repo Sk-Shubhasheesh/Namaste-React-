@@ -478,3 +478,15 @@ class UserClass extends React.Component {
 ♦️ In a very generic way to see our React app, we can say it is composed of 2 Main Layers: Data Layer and UI Layer.
 ♦️ The Data Layer consists of state, props, local variables, and whatever data our app deals with.
 ♦️ It powers the UI layer of our app.
+
+### What is Lifting the State Up?
+
+♦️ Sometimes, we don't want to give the power of managing the state variable to the child component. Instead, we want to keep the state variable in the parent and pass its value as a prop from the parent component to the child component.
+
+♦️ This way, the child component does not maintain its own state but is being controlled by its parent. This is known as 'Lifting the State Up'.
+
+### What are Controlled and Uncontrolled Components?
+
+♦️ Controlled Component: The Component that is being controlled by some other component. It is not able to maintain its own state.
+
+♦️ UnControlled Component: The Component that itself has its single source of truth i.e. 'state' managed by itself is an Uncontrolled Component. It is not being controlled by any other component and is independently maintaining its own state variable.
