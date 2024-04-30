@@ -486,7 +486,25 @@ class UserClass extends React.Component {
 ♦️ This way, the child component does not maintain its own state but is being controlled by its parent. This is known as 'Lifting the State Up'.
 
 ### What are Controlled and Uncontrolled Components?
-
 ♦️ Controlled Component: The Component that is being controlled by some other component. It is not able to maintain its own state.
 
 ♦️ UnControlled Component: The Component that itself has its single source of truth i.e. 'state' managed by itself is an Uncontrolled Component. It is not being controlled by any other component and is independently maintaining its own state variable.
+
+### What is Props Drilling?
+♦️ Sometimes, we need to pass down data from one component to another through multiple nested levels of components.
+
+♦️ This is a problem as we are unnecessarily passing props even to those components that never need them. This is not a good way of managing the Data Layer. This problem is called 'Props Drilling'.
+
+
+### What is a Context Provider?
+* For avoiding the props driling we use react context.
+♦️ We use it to provide the context to some portion of our app, along with specifying some value for the context.
+
+♦️ The <SomeContext.Provider/> component is used to provide the value for the context. And we wrap some parts of our app/whole app with this component.
+
+♦️ It takes the 'value' prop where we can pass in the data we want to keep in the context. This data will override the default context value.
+
+### What is Context Consumer?
+♦️ We use the component <SomeContext.Consumer/> to subscribe to a context. It lets us read the context value.
+
+♦️ This component takes a function as a child, which takes the current context value and returns a React node.
