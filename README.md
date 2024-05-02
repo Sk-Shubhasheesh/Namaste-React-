@@ -508,3 +508,15 @@ class UserClass extends React.Component {
 ♦️ We use the component <SomeContext.Consumer/> to subscribe to a context. It lets us read the context value.
 
 ♦️ This component takes a function as a child, which takes the current context value and returns a React node.
+
+
+
+## Episod 12 - Let's Bulid our store
+
+### What about Redux ?
+* Redux is an open-source JavaScript library for managing and centralizing application state. 
+* Redux is work on data layer of our application.
+* Actually Reduc is not mendatory in our apllication. You don't need to use redux if you are using a small/mid-level application. But if you are using a large scale apllication where data is havily used a lot of read & write operations are happening then using Redux make sense.
+* Reduc and React are different library.
+* There is another library like redux, *ZUSTAND* which gaining popularity a lot. 
+* Redux offers easy debugging.
